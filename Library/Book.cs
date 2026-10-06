@@ -15,17 +15,33 @@ namespace Library
         public string Title
         {
             get { return title; }
-            set { title = value; }
+            set 
+            {
+                //Check if any incoming char is a digit
+                if (!value.Any(char.IsDigit))
+                {
+                    title = value;
+                }
+                else
+                {
+                    Console.WriteLine("Cannot enter number for title");
+                }
+            }
+
         }
         public string Author
         {
             get { return author; }
-            set { author = value; }
+            set { author = value;
+            
+            }
         }
         public int ISBN
         {
             get { return isbn; }
-            set { isbn = value; }
+            set { isbn = value;
+            
+            }
         }
 
         //Paramaterised Constructor//

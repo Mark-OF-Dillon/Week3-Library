@@ -1,7 +1,7 @@
 ﻿using Library;
 
 //This is information for one book in our library
-Book book = new Book("C# for beginners", "Bill Gates", 12345678);
+Book book = new Book("C# for beginners1", "Bill Gates", 12345678);
 book.DisplayInfo();
 Console.WriteLine("\n");
 
